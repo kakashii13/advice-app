@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/kakashii13/advice-app/static/css/main.019692ce.css",
-    "main.js": "/kakashii13/advice-app/static/js/main.64589432.js",
-    "index.html": "/kakashii13/advice-app/index.html",
-    "main.019692ce.css.map": "/kakashii13/advice-app/static/css/main.019692ce.css.map",
-    "main.64589432.js.map": "/kakashii13/advice-app/static/js/main.64589432.js.map"
+    "main.css": "/kakashii13.github.io/advice-app/static/css/main.019692ce.css",
+    "main.js": "/kakashii13.github.io/advice-app/static/js/main.64589432.js",
+    "index.html": "/kakashii13.github.io/advice-app/index.html",
+    "main.019692ce.css.map": "/kakashii13.github.io/advice-app/static/css/main.019692ce.css.map",
+    "main.64589432.js.map": "/kakashii13.github.io/advice-app/static/js/main.64589432.js.map"
   },
   "entrypoints": [
     "static/css/main.019692ce.css",

@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [id, setId] = useState("");
+  const [advice, setAdvice] = useState("");
+
+  const useApi = async () => {
+    const API = "https://api.adviceslip.com/advice";
+    const response = await fetch(API);
+    const data = await response.json();
+    setId(data.slip.id);
+    setAdvice(data.slip.advice);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Container">
+        <h2 className="Title">{`ADVICE #${id || ""}`}</h2>
+        <div className="Text-container">
+          <p className="Text">{advice}</p>
+        </div>
+        <img
+          onClick={useApi}
+          className="Button"
+          src="https://icongr.am/fontawesome/random.svg?size=20&color=currentColor"
+        />
+      </div>
     </div>
   );
 }
